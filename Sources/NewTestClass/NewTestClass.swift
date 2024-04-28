@@ -3,7 +3,7 @@
 
 import Foundation
 
-@objc public class NewTestClass: NSObject {
+@objcMembers public class NewTestClass: NSObject {
     
     public override init() {
         super.init()
