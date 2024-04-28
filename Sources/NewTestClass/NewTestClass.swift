@@ -3,9 +3,10 @@
 
 import Foundation
 
-@objcMembers public class NewTestClass: NSObject {
+@objc(NewTestClass33)
+public class NewTestClass: NSObject {
     
-    public override init() {
+    @objc public override init() {
         super.init()
     }
     
