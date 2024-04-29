@@ -3,14 +3,20 @@
 
 import Foundation
 
-@objc(NewTestClass33)
+@objcMembers
 public class NewTestClass: NSObject {
     
-    @objc public override init() {
+    public override init() {
         super.init()
     }
     
-    @objc public func testHello() {
+    public func testHello() {
         print("testHello!")
+    }
+    
+    public func myService() -> String {
+        
+        
+        return "This is myService in MyPackage"
     }
 }
