@@ -16,11 +16,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "NewTestLibrary",
-            path: "Sources",
-//            publicHeadersPath: "Sources",
-            cSettings: [
-                .headerSearchPath("."),
-            ]
+            path: "Sources"
         ),
         .testTarget(
             name: "NewTestLibraryTests",
