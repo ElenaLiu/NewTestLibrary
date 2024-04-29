@@ -21,9 +21,6 @@ let package = Package(
         .target(
             name: "NewTestClass",
             dependencies: ["MyPackageObj"]
-        ),
-        .testTarget(
-            name: "NewTestLibraryTests",
-            dependencies: ["NewTestLibrary"]),
+        )
     ]
 )
