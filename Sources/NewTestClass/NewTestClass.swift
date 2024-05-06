@@ -4,7 +4,7 @@
 import Foundation
 import ComposableArchitecture
 
-//@objcMembers
+@objcMembers
 public class NewTestClass: NSObject {
     
     public override init() {
