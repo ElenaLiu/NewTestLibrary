@@ -2,6 +2,7 @@
 // https://docs.swift.org/swift-book
 
 import Foundation
+import ComposableArchitecture
 
 @objcMembers
 public class NewTestClass: NSObject {
@@ -19,4 +20,13 @@ public class NewTestClass: NSObject {
         
         return "This is myService in MyPackage"
     }
+}
+
+@Reducer
+struct Feature {
+  @ObservableState
+  struct State: Equatable {
+    var count = 0
+    var numberFact: String?
+  }
 }
