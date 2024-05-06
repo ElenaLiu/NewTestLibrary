@@ -2,7 +2,7 @@
 // https://docs.swift.org/swift-book
 
 import Foundation
-//import ComposableArchitecture
+import ComposableArchitecture
 
 @objcMembers
 public class NewTestClass: NSObject {
@@ -22,11 +22,11 @@ public class NewTestClass: NSObject {
     }
 }
 
-//@Reducer
-//struct Feature {
-//  @ObservableState
-//  struct State: Equatable {
-//    var count = 0
-//    var numberFact: String?
-//  }
-//}
+@Reducer
+struct Feature {
+  @ObservableState
+  struct State: Equatable {
+    var count = 0
+    var numberFact: String?
+  }
+}

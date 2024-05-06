@@ -14,11 +14,11 @@ let package = Package(
             name: "NewTestLibrary",
             targets: ["MyPackageObj", "NewTestClass"]),
     ],
-//    dependencies: [
-//        .package(url: "https://github.com/onevcat/Kingfisher.git", from: "7.0.0"),
-//        .package(url: "https://github.com/pointfreeco/swift-composable-architecture.git", from: "1.0.0")
-//        
-//    ],
+    dependencies: [
+        .package(url: "https://github.com/onevcat/Kingfisher.git", from: "7.0.0"),
+        .package(url: "https://github.com/pointfreeco/swift-composable-architecture.git", from: "1.0.0")
+        
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
@@ -27,10 +27,10 @@ let package = Package(
             publicHeadersPath:"include"
         ),
         .target(
-            name: "NewTestClass"
-//            dependencies: ["MyPackageObj",
-//                           "Kingfisher",
-//                .product(name: "ComposableArchitecture", package: "swift-composable-architecture")]
+            name: "NewTestClass", 
+            dependencies: ["MyPackageObj",
+                           "Kingfisher",
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture")]
         ),
         .testTarget(
             name: "NewTestLibraryTests",
